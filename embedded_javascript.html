@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Embedded Javasript</title>
+
+		<script type="text/javascript">
+			function addToPTagText(){
+				var pTag = document.getElementById("myPtag");
+				pTag.innerHTML += "<br />Hello from embedded javascript!";
+			}
+		</script>
+
+	</head>
+	<body>
+		<h1>Embedded Javasript</h1>
+		<p>Javascript can defined in the body or head section, using the <code>script</code>  tag:</p>	
+		<pre><code>&lt;script type="text/javascript"&gt;
+	//javascript instructions go here...
+&lt;/script&gt;
+		</code></pre>
+
+		<input	onclick="addToPTagText();" 
+				type="button"
+				value="Click to invoke javascript function" />
+		<p id="myPtag"></p>
+	</body>
+</html>
